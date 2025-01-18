@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_background6"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Input Username -->
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edt_white"
+                android:hint="Username"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/icon_nama_white"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+
+        <!-- Input Password -->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edt_white"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/icon_lock_white"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
+
+
+        <!-- Tombol Login -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:text="LOGIN"
+            android:textColor="@color/RUS_red"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Teks Sign Up -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:textSize="14dp"
+                android:text="Don't Have Account Sign Up"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+
+        <!-- Table Layout untuk garis dan teks "OR" -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- Garis kiri -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/line"/>
+
+                <!-- Teks "OR" -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="OR"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Garis kanan -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/line" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgGoogle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="25dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                app:srcCompat="@drawable/icon_google" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                app:srcCompat="@drawable/icon_facebook" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
